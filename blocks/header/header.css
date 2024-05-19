@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  max-width: 1440px;
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
@@ -39,7 +39,23 @@ header nav[aria-expanded="true"] {
 @media (width >= 900px) {
   header nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  header nav div.section:last-child {
+    flex-basis: 100%;
+
+    & div ul {
+      list-style-type: none;
+      margin-top: 0;
+      
+      & li {
+        display: inline-block;
+        margin-right: 1rem;
+      
+      }
+    }
   }
 
   header nav[aria-expanded="true"] {
