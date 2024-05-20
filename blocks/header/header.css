@@ -3,7 +3,7 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   display: flex;
-  
+  padding-top: 1rem;
 }
 
 header nav {
@@ -27,6 +27,7 @@ header nav {
   & div {
     padding: 0 2rem;
   }
+
 }
 
 header nav[aria-expanded="true"] {
@@ -41,6 +42,12 @@ header nav[aria-expanded="true"] {
 @media (width >= 600px) {
   header nav {
     padding: 0 2rem;
+  }
+}
+
+@media (width <= 900px) {
+  header nav div.section:last-child {
+    display: none;
   }
 }
 

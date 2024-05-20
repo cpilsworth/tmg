@@ -24,8 +24,7 @@ footer .footer {
 footer .footer ul {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   max-height: 8em;
 
   & li {
