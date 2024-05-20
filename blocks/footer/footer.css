@@ -17,19 +17,20 @@ footer .footer {
   }
 
   & div div:not(:first-child) {
-    background-color: var(--footer-background-color);
+    background-color: var(--dark-background-color);
   }
 }
 
 footer .footer ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   max-height: 8em;
 
   & li {
     display: inline-block;
+
     & a {
       color: #fff;
     }
